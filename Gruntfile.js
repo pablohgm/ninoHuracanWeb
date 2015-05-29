@@ -71,7 +71,7 @@ module.exports = function(grunt) {
           layout: '<%= config.src %>/templates/layouts/default.hbs',
           data: '<%= config.src %>/data/*.{json,yml}',
           partials: '<%= config.src %>/templates/partials/*.hbs',
-          plugins: ['assemble-contrib-permalinks','assemble-contrib-sitemap'],
+          plugins: ['assemble-contrib-permalinks','assemble-contrib-sitemap']
         },
         files: {
           '<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs']
@@ -86,11 +86,23 @@ module.exports = function(grunt) {
         src: '**',
         dest: '<%= config.dist %>/assets/'
       },
+      jquery: {
+        expand: true,
+        cwd: 'bower_components/jquery/dist/',
+        src: 'jquery.min.js',
+        dest: '<%= config.dist %>/assets/js'
+      },
       theme: {
         expand: true,
         cwd: 'src/assets/',
         src: '**',
         dest: '<%= config.dist %>/assets/css/'
+      },
+      js: {
+        expand: true,
+        cwd: 'src/js/',
+        src: '**',
+        dest: '<%= config.dist %>/assets/js/'
       }
     },
 

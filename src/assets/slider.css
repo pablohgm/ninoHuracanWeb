@@ -1,0 +1,33 @@
+#slideshow{
+    padding-top: 120px;
+    width:792px;
+    margin:0 auto;
+}
+#slideshow .showcase-slide .slide0, .slide1, .slide2, .slide3, .slide4{
+    position: absolute;
+    display: block;
+}
+#slideshow .showcase-slide .hidden{
+    visibility: hidden;
+}
+#slideshow .showcase-toolbar{
+    background: none;
+    padding-top: 612px;
+}
+
+#slideshow .showcase-toolbar .indicators{
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    display:table;
+    overflow: hidden;
+}
+#slideshow .showcase-toolbar .indicators li{
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+#slideshow .showcase-toolbar .indicators li .indicator0, .indicator1, .indicator2, .indicator3, .indicator4{
+    width: 24px;
+    height: 24px;
+}

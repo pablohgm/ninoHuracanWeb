@@ -4,3 +4,16 @@ footerItems:
   - disclaimer: "\u00aeNi\u00f1o Hurac\u00e1n"
   - disclaimer: "Todos los derechos reservados"
   - disclaimer: "El abuso del licor es nocivo para la salud"
+
+slideShowItems:
+  - image: "assets/css/img/slide1.jpg"
+    altImage: "Descripcion 1"
+    cssClass: "slide0"
+
+  - image: "assets/css/img/slide2.jpg"
+    altImage: "Descripcion 2"
+    cssClass: "slide1 hidden"
+
+  - image: "assets/css/img/slide3.jpg"
+    altImage: "Descripcion 3"
+    cssClass: "slide2 hidden"

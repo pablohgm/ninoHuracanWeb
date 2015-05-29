@@ -30,33 +30,3 @@ body{
     font-weight: 200;
     padding-left: 5%;
 }
-
-#slideshow{
-    padding-top: 120px;
-    width:792px;
-    margin:0 auto;
-}
-#slideshow .showcase-slide .slide0, .slide1, .slide2, .slide3, .slide4{
-    position: absolute;
-}
-#slideshow .showcase-toolbar{
-    background: none;
-    padding-top: 612px;
-}
-
-#slideshow .showcase-toolbar .indicators{
-    list-style: none;
-    text-align: center;
-    margin: 0 auto;
-    display:table;
-    overflow: hidden;
-}
-#slideshow .showcase-toolbar .indicators .indicator0, .indicator1, .indicator2, .indicator3, .indicator4{
-    background: url(img/indicator.png) no-repeat transparent;
-    cursor: pointer;
-    float: left;
-    width: 24px;
-    height: 24px;
-    margin-left: auto ;
-    margin-right: auto ;
-}
