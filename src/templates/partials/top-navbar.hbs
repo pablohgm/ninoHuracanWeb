@@ -1,0 +1,19 @@
+---
+component: navbar
+---
+<!-- Fixed navbar -->
+<div class="navbar topnav" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand header-logo" href="{{relative page.dest "dist/index.html"}}"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      {{#withSort pages "data.sortOrder"}}
+          <li{{#if this.isCurrentPage}} class="active"{{/if}}>
+            <a href="{{relative dest this.dest}}">{{ data.title }}</a>
+          </li>
+      {{/withSort}}
+    </ul>
+  <div class="navbar-header navbar-right">
+    <a class="navbar-brand header-social" href="https://www.facebook.com/ninoHuracan"></a>
+  </div>
+</div>

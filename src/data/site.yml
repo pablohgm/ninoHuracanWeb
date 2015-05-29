@@ -1,1 +1,6 @@
 title: NinoHuracanWeb
+
+footerItems:
+  - disclaimer: "\u00aeNi\u00f1o Hurac\u00e1n"
+  - disclaimer: "Todos los derechos reservados"
+  - disclaimer: "El abuso del licor es nocivo para la salud"

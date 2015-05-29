@@ -1,0 +1,16 @@
+<div class="showcase-slide">
+	{{#each this}}
+    	<div class="{{cssClass}}">
+    		<img src="{{image}}" alt="{{altImage}}">
+	    </div>
+	{{/each}}      
+</div>
+<div class="showcase-toolbar">
+    <ul class="indicators">
+    	{{#each this}}
+    		<li class="indicator{{@index}}">
+            	<div class="on"></div>
+        	</li>
+		{{/each}}                
+    </ul>
+</div>
