@@ -34,7 +34,11 @@ module.exports = function(grunt) {
         tasks: ['assemble']
       },
       css: {
-        files: ['<%= config.src %>/{assets,js}/{,*/}*.{js,css,png,jpg,jpeg,gif,webp,svg}'],
+        files: ['<%= config.src %>/{assets,js}/{,*/}*.{less,css}'],
+        tasks: ['less']
+      },
+      assets: {
+        files: ['<%= config.src %>/{assets,js}/{,*/}*.{js,png,jpg,jpeg,gif,webp,svg}'],
         tasks: ['copy']
       },
       livereload: {
@@ -44,6 +48,7 @@ module.exports = function(grunt) {
         files: [
           '<%= config.dist %>/{,*/}*.html',
           '<%= config.dist %>/assets/{,*/}*.css',
+          '<%= config.dist %>/assets/{,*/}*.less',
           '<%= config.dist %>/assets/{,*/}*.js',
           '<%= config.dist %>/assets/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
@@ -63,6 +68,19 @@ module.exports = function(grunt) {
           base: [
             '<%= config.dist %>'
           ]
+        }
+      }
+    },
+
+    less: {
+      development: {
+        options: {
+          paths: ['<%= config.src %>/assets/']
+        },
+        files: {
+          '<%= config.dist %>/assets/css/slider.css': '<%= config.src %>/assets/slider.less',
+          '<%= config.dist %>/assets/css/theme.css': '<%= config.src %>/assets/theme.less',
+          '<%= config.dist %>/assets/css/topnav.css': '<%= config.src %>/assets/topnav.less'
         }
       }
     },
@@ -96,10 +114,10 @@ module.exports = function(grunt) {
         src: 'jquery.min.js',
         dest: '<%= config.dist %>/assets/js'
       },
-      theme: {
+      assets: {
         expand: true,
         cwd: 'src/assets/',
-        src: '**',
+        src: 'img/*',
         dest: '<%= config.dist %>/assets/css/'
       },
       js: {
@@ -117,6 +135,7 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-contrib-less');
 
   grunt.registerTask('server', [
     'build',
@@ -127,6 +146,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean',
     'copy',
+    'less',
     'assemble'
   ]);
 
