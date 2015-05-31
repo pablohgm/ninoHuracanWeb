@@ -33,6 +33,10 @@ module.exports = function(grunt) {
         files: ['<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}'],
         tasks: ['assemble']
       },
+      css: {
+        files: ['<%= config.src %>/{assets,js}/{,*/}*.{js,css,png,jpg,jpeg,gif,webp,svg}'],
+        tasks: ['copy']
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
