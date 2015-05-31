@@ -9,7 +9,7 @@ component: navbar
 		</div>
 		<ul class="nav navbar-nav">
 		  {{#withSort pages "data.sortOrder"}}
-		      <li{{#if this.isCurrentPage}} class="active"{{/if}}>
+		      <li {{#if this.isCurrentPage}} class="active"{{/if}}>
 		        <a href="{{relative dest this.dest}}">{{ data.title }}</a>
 		      </li>
 		  {{/withSort}}
