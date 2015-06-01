@@ -20,3 +20,16 @@ slideShowItems:
     altImage: "Descripcion 3"
     cssClass: "slide2 hidden"
     indicatorCssClass: "inactive"
+
+promos:
+  - image1: "assets/css/img/promo1.jpg"
+    title1: "disfruta"
+    titlespan1: "nuestras cervezas"
+    description1: "en el festival de cerveza artesanal. El proximo sabado 6 de Junio."
+    url1: "/eventos.html"
+    image2: "assets/css/img/promo2.jpg"
+    title2: "Te gustan"
+    titlespan2: "nuestros productos?"
+    description2: "Puedes adquirirlos en nuestro stand, en el IV Festival de Cerveza Artesanal."
+    url2: "/eventos.html"
+
