@@ -9,7 +9,7 @@
     <ul class="indicators">
     {{#each site.slideShowItems}}
       <li>
-        <a class="indicator{{@index}}" href="#slideshow"><img src="assets/css/img/indicator.png"></a>
+        <a class="indicator indicator{{@index}}" href="#slideshow"><img class="indicator-pin indicator-pin{{@index}} {{indicatorCssClass}}"></a>
       </li>
 		{{/each}}
     </ul>

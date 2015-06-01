@@ -26,5 +26,7 @@ SLIDESHOW.TOOLBAR = {
     setActive: function(slideIndex) {
         $('.slide').addClass('hidden');        
         $('.slide'+slideIndex).removeClass('hidden');
+        $('.indicator-pin').addClass('inactive');
+        $('.indicator-pin'+slideIndex).removeClass('inactive');
     }     
 };
