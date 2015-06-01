@@ -2,16 +2,22 @@
 	{{#each site.promos}}
     	<div class="promo-banner">
 			<div class="promo-cell">  
-			<a href="{{url1}}">		
-				<div>
+			<a href="{{url1}}">
+				<div class="info">
+	    			<h1>{{title1}}<span>{{titlespan1}}</span></h1>
+	    		</div>		
+				<div class="full-info" style="visibility:hidden;">
 	    			<h1>{{title1}}<span>{{titlespan1}}</span></h1>
 	    			<p>{{description1}}</p>
 	    		</div>
 	    		<img src="{{image1}}"></a>	    		
     		</div>
     		<div class="promo-cell"> 
-    		<a href="{{url2}}"> 		
-    			<div>
+    		<a href="{{url2}}"> 
+    			<div class="info">
+	    			<h1>{{title2}}<span>{{titlespan2}}</span></h1>
+	    		</div>		
+    			<div class="full-info" style="visibility:hidden;">
 	    			<h1>{{title2}}<span>{{titlespan2}}</span></h1>
 	    			<p>{{description2}}</p>
 	    		</div>
