@@ -78,9 +78,11 @@ module.exports = function(grunt) {
           paths: ['<%= config.src %>/assets/']
         },
         files: {
-          '<%= config.dist %>/assets/css/slider.css': '<%= config.src %>/assets/slider.less',
-          '<%= config.dist %>/assets/css/theme.css': '<%= config.src %>/assets/theme.less',
-          '<%= config.dist %>/assets/css/topnav.css': '<%= config.src %>/assets/topnav.less'
+          '<%= config.dist %>/assets/css/min-main.css': '<%= config.src %>/assets/min-main.less',
+          '<%= config.dist %>/assets/css/large-main.css': '<%= config.src %>/assets/large-main.less',
+          '<%= config.dist %>/assets/css/min-topnav.css': '<%= config.src %>/assets/min-topnav.less',
+          '<%= config.dist %>/assets/css/large-topnav.css': '<%= config.src %>/assets/large-topnav.less',
+          '<%= config.dist %>/assets/css/slider.css': '<%= config.src %>/assets/slider.less'
         }
       }
     },
