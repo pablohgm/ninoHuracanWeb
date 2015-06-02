@@ -3,51 +3,53 @@
 //phones
 @media (min-width: @screen-custom-ext-min) {
 
-.topnav{
-  background-image: none;
-  background-color: @color-background-dark;
-  border-radius: 0;
-  position: relative !important;
-}
+  .topnav{
+    background-image: none;
+    background-color: @color-background-dark;
+    border-radius: 0;
+    position: fixed;
+    height: 120px;
+    bottom: 0;
+  }
 
-}
+  }
 
-//tablets
-@media (min-width: @screen-sm-min) {
+  //tablets
+  @media (min-width: @screen-sm-min) {
 
-.topnav .header-logo {
-  background-image: url("img/logo.png");
-  height: 100px;
-  margin: 10px;
-  width: 155px;
-  font-size: 0px; //hide the text
-}
+  .topnav .header-logo {
+    background-image: url("img/logo.png");
+    height: 100px;
+    margin: 10px;
+    width: 155px;
+    font-size: 0px; //hide the text
+  }
 
-.topnav .navbar-nav {
-  height: 100px;
-}
+  .topnav .navbar-nav {
+    height: 100px;
+  }
 
-.topnav .navbar-nav li{
-  height: 100px;
-}
+  .topnav .navbar-nav li{
+    height: 100px;
+  }
 
-.topnav .navbar-nav li a{
-  margin-top: 2em;
-  font-size: @font-size-navbar;
-  color: @font-color-white;
-  text-transform: uppercase;
-  padding-right: 5px;
-}
+  .topnav .navbar-nav li a{
+    margin-top: 2em;
+    font-size: @font-size-navbar;
+    color: @font-color-white;
+    text-transform: uppercase;
+    padding-right: 5px;
+  }
 
-.navbar.topnav div ul li.active a{
-  font-weight: bold;
-  background-image: none;
-}
+  .navbar.topnav div ul li.active a{
+    font-weight: bold;
+    background-image: none;
+  }
 
-.navbar.topnav div ul li:hover a{
-  font-weight: bold;
-  background-image: none;
-}
+  .navbar.topnav div ul li:hover a{
+    font-weight: bold;
+    background-image: none;
+  }
 
 }
 
