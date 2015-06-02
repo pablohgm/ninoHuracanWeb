@@ -17,7 +17,16 @@ SLIDESHOW.TOOLBAR = {
         });
         $('.indicator4').bind('click',function(){           
             SLIDESHOW.TOOLBAR.setActive(4);
-        });    
+        });   
+        $('.prev-slide').bind('click',function(){   
+            if(SLIDESHOW.COUNTER===0){SLIDESHOW.COUNTER = SLIDESHOW.DIMENSION;}        
+            SLIDESHOW.COUNTER = SLIDESHOW.COUNTER -1;
+            SLIDESHOW.TOOLBAR.setActive(SLIDESHOW.COUNTER);
+        });  
+        $('.next-slide').bind('click',function(){                       
+            SLIDESHOW.COUNTER = (SLIDESHOW.COUNTER + 1) % SLIDESHOW.DIMENSION;
+            SLIDESHOW.TOOLBAR.setActive(SLIDESHOW.COUNTER);
+        }); 
         window.setInterval(function(){           
            SLIDESHOW.TOOLBAR.setActive(SLIDESHOW.COUNTER);
            SLIDESHOW.COUNTER = (SLIDESHOW.COUNTER + 1) % SLIDESHOW.DIMENSION;

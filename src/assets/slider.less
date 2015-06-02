@@ -12,7 +12,7 @@
 }
 #slideshow .showcase-toolbar{
   background: none;
-  padding-top: 612px;
+  padding-top: 312px;
 }
 
 #slideshow .showcase-toolbar .indicators{
@@ -34,13 +34,43 @@
   height: 24px;
 }
 #slideshow .showcase-toolbar .indicators .indicator .indicator-pin{
-  content:url("img/indicator.png");
+  content:url("img/pin-20.png");
+}
+#slideshow .showcase-toolbar .indicators .indicator .indicator-pin:after{
+  content:url("img/pin-20.png");
 }
 #slideshow .showcase-toolbar .indicators .indicator .inactive{
   margin-top: 1px;
-  content:url("img/small-indicator.png") !important;
+  content:url("img/pin-16.png") !important;
 }
-
+#slideshow .showcase-toolbar .indicators .indicator .inactive:after{
+  margin-top: 1px;
+  content:url("img/pin-16.png") !important;
+}
+#slideshow .showcase-toolbar .showcase-controls{
+  width: 100%;
+  padding-bottom: 300px;
+}
+#slideshow .showcase-toolbar .showcase-controls .prev-slide{
+  float: left;
+  margin-left: -20px;
+}
+#slideshow .showcase-toolbar .showcase-controls .next-slide{
+  float: right;
+  margin-right: -20px;
+}
+#slideshow .showcase-toolbar .showcase-controls .prev-slide .prev-arrow{
+  content:url("img/prev-24.png");
+}
+#slideshow .showcase-toolbar .showcase-controls .prev-slide .prev-arrow:after{
+  content:url("img/prev-24.png");
+}
+#slideshow .showcase-toolbar .showcase-controls .next-slide .next-arrow{
+  content:url("img/next-24.png");
+}
+#slideshow .showcase-toolbar .showcase-controls .next-slide .next-arrow:after{
+  content:url("img/next-24.png");
+}
 .promo-board{
   display: table;
   margin:0 auto;
