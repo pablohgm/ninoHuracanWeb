@@ -7,15 +7,19 @@
     background-image: none;
     background-color: @color-background-dark;
     border-radius: 0;
+    position: relative !important;
+  }
+
+}
+
+  //tablets
+@media (min-width: @screen-sm-min) {
+
+  .topnav {
     position: fixed;
     height: 120px;
     bottom: 0;
   }
-
-  }
-
-  //tablets
-  @media (min-width: @screen-sm-min) {
 
   .topnav .header-logo {
     background-image: url("img/logo.png");
@@ -47,7 +51,7 @@
   }
 
   .navbar.topnav div ul li:hover a{
-    font-weight: bold;
+    //font-weight: bold;
     background-image: none;
   }
 
