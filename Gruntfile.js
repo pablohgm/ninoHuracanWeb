@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         tasks: ['less']
       },
       assets: {
-        files: ['<%= config.src %>/{assets,js}/{,*/}*.{js,png,jpg,jpeg,gif,webp,svg}'],
+        files: ['<%= config.src %>/{assets,js}/{,*/}*.{js,png,jpg,jpeg,gif,webp,svg,otf}'],
         tasks: ['copy']
       },
       livereload: {
@@ -121,6 +121,12 @@ module.exports = function(grunt) {
         cwd: 'src/assets/',
         src: 'img/*',
         dest: '<%= config.dist %>/assets/css/'
+      },
+      fonts: {
+        expand: true,
+        cwd: 'src/assets/',
+        src: 'fonts/**',
+        dest: '<%= config.dist %>/assets/'
       },
       js: {
         expand: true,
