@@ -3,7 +3,8 @@
 @media (min-width: @screen-custom-ext-min) {
   @font-face {
     font-family: Knockout;
-    src: url("../fonts/knockout/Knockout-HTF70-FullWelterwt.otf") format("opentype");
+    //src: url("../fonts/knockout/Knockout-HTF70-FullWelterwt.otf") format("opentype");
+    src: url("../fonts/knockout/Knockout-HTF29-JuniorLiteweight.otf") format("opentype");
   }
   
   html {
@@ -14,12 +15,9 @@
   body{
     margin: 0;
     font-family: Knockout;
+    font-size: @font-size-large;
   }
   
-  body .container .content{
-    padding-top: 5%;
-  }
-
   #footer{
     visibility: hidden;
   }
@@ -32,6 +30,10 @@
 }
 
 @media (min-width: @screen-sm-min) {
+
+  body{
+    font-size: @font-size-mid-large;
+  }
 
   #footer{
     visibility: visible;
