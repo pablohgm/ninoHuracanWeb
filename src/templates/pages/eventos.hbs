@@ -3,3 +3,19 @@ title: Eventos
 sortOrder: 1
 ---
 <h3>Eventos</h3>
+<div class="event-board">
+	{{#each events.flyer}}
+    	<div class="event-row">
+			<div class="event-cell">
+				<a target="_blank" href="{{url}}">
+					<img src="{{image}}">
+				</a>  
+    		</div>
+    		<div class="event-cell"> 
+    			<h2>{{title}}</h2>
+    			<h4>{{date}}</h4>
+		    	<p>{{description}}</p>   		
+    		</div>
+	    </div>
+	{{/each}}
+</div>
