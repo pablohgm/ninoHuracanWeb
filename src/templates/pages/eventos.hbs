@@ -2,21 +2,35 @@
 title: Eventos
 sortOrder: 1
 ---
-<h3>Eventos</h3>
+<h2>Eventos</h2>
 <div class="event-board">
-	{{#each events.flyer}}
+	{{#each events.flyer}}		
     	<div class="event-row">
 			<div class="event-cell">
-				<a target="_blank" href="{{url}}">
-					<img src="{{image}}">
+				<a target="_blank" href="{{url1}}">
+					<img src="{{image1}}">
 				</a>  
     		</div>
     		<div class="event-cell"> 
-    			<div class="info">
-	    			<h2>{{title}}</h2>
-	    			<h4>{{date}}</h4>
-			    	<p>{{description}}</p>   		
+    			<div class="info right-info">
+	    			<h3>{{title1}}</h3>
+	    			<h4>{{date1}}</h4>
+			    	<p>{{description1}}</p>   		
 			    </div>	
+    		</div>
+	    </div>
+		<div class ="event-row">			
+    		<div class="event-cell"> 
+    			<div class="info left-info">
+	    			<h3>{{title2}}</h3>
+	    			<h4>{{date2}}</h4>
+			    	<p>{{description2}}</p>   		
+			    </div>	
+    		</div>
+			<div class="event-cell left-flyer">
+				<a target="_blank" href="{{url2}}">
+					<img src="{{image2}}">
+				</a>  
     		</div>
 	    </div>
 	{{/each}}
