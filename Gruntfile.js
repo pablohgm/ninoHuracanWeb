@@ -81,8 +81,7 @@ module.exports = function(grunt) {
           '<%= config.dist %>/assets/css/min-main.css': '<%= config.src %>/assets/min-main.less',
           '<%= config.dist %>/assets/css/large-main.css': '<%= config.src %>/assets/large-main.less',
           '<%= config.dist %>/assets/css/min-topnav.css': '<%= config.src %>/assets/min-topnav.less',
-          '<%= config.dist %>/assets/css/large-topnav.css': '<%= config.src %>/assets/large-topnav.less',
-          '<%= config.dist %>/assets/css/slider.css': '<%= config.src %>/assets/slider.less'
+          '<%= config.dist %>/assets/css/large-topnav.css': '<%= config.src %>/assets/large-topnav.less'
         }
       }
     },

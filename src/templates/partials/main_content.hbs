@@ -1,30 +1,14 @@
-<div class="promo-board">
-	{{#each site.promos}}
-    	<div class="promo-banner">
-			<div class="promo-cell">  
-				<a target="{{target1}}" href="{{url1}}">
-					<div class="info">
-		    			<h1>{{title1}}<span>{{titlespan1}}</span></h1>
-		    			<div class="full-info" style="visibility:hidden;">	    			
-		    				<p>{{description1}}</p>
-		    			</div>
-		    		</div>						
-		    		<img src="{{image1}}">
-	    		</a>	    		
-    		</div>
-    		<div class="promo-cell"> 
-    			<a target="{{target2}}" href="{{url2}}"> 
-	    			<div class="info">
-		    			<h1>{{title2}}<span>{{titlespan2}}</span></h1>
-		    			<div class="full-info" style="visibility:hidden;">	    			
-		    				<p>{{description2}}</p>
-		    			</div>
-		    		</div>		
-		    		<img src="{{image2}}">
-	    		</a>	    		
-    		</div>
-	    </div>
-	{{/each}}
+<div class="collapse" id="contact">
+    {{> contacto}}
 </div>
+<div class="collapse" id="acerca">
+    {{> acerca}}
+</div>
+<a class="button btn-left" role="button" data-toggle="collapse" href="#contact" aria-expanded="false" aria-controls="contact">
+  {{acerca.title}}
+</a>
+<a class="button" role="button" data-toggle="collapse" href="#acerca" aria-expanded="false" aria-controls="acerca">
+  {{contacto.title}}
+</a>
 
 
