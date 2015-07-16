@@ -2,7 +2,8 @@
   "name": "ninohuracanweb",
   "version": "0.1.0",
   "dependencies": {
-    "bootstrap": "~3.2.0"
+    "bootstrap": "~3.2.0",
+    "jquery": "~2.1.4"
   },
   "private": true
 }
